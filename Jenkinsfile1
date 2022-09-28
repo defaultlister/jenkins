@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Back-end') {
       agent {
-        docker { image 'mcr.microsoft.com/dotnet/framework/samples:dotnetapp' }
+        docker { image 'mcr.microsoft.com/dotnet/samples' }
       }
       steps {
         sh 'sdk --version'
